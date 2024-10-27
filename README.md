@@ -65,7 +65,7 @@ Intuitive and easy-to-navigate UI designed in Figma.
 Accessibility standards compliance for all user types.
 
 4.4 Reliability Requirements
-99.9% uptime.
+99% uptime.
 Real-time failure detection and reporting.
 
 4.5 Maintainability Requirements

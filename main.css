@@ -1,0 +1,399 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000000;
+    /* background-image: radial-gradient(circle at 30% 60%, rgba(128, 0, 255, 0.5), transparent 60%),
+                      radial-gradient(circle at 70% 40%, rgba(255, 0, 255, 0.5), transparent 60%),
+                      radial-gradient(circle at 50% 80%, rgba(75, 0, 130, 0.3), transparent 60%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0; */
+    background-image: url("Screenshot 2024-11-06 135358.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    /* background-size: max(1400px, 100vw); */
+    position: relative;
+}
+
+/* Navbar styling */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 1500px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: scale(1.2);
+    animation: slide 0.5s ease-in forwards;
+    
+    
+}
+
+@keyframes slide {
+    from {
+        top: -90px;
+        opacity: 0;
+    }
+    to {
+        top: 0px; /* Adjust based on desired end position */
+        opacity: 1;
+    }
+}
+
+
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo-highlight {
+    color: #d400ff;
+}
+
+.log2{
+    position: relative;
+    left: 60px;
+    bottom: 15.6px;
+}
+
+
+.nav-links a,
+.login-btn {
+    color: blanchedalmond;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+    font-weight: bold;
+    border: 1px solid #d400ff;
+    border-radius: 15px;
+    padding: 8px 15px;
+    transition: all 0.3s;
+}
+
+.nav-links a:hover,
+.login-btn:hover {
+    color: #fff;
+    background-color: #b423d1;
+}
+
+
+.login-btn {
+    color: bisque;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+    font-weight: bold;
+    border: 1px solid #d400ff;
+    border-radius: px;
+    padding: 8px 15px;
+    transition: all 0.3s;
+    background-color: transparent;
+}
+
+.nav-links a:hover,
+.login-btn:hover {
+    color: #fff;
+    background-color: #b423d1;
+}
+
+    
+
+
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 7.5em;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #fff;
+    position: relative;
+    bottom: 165px;
+    animation: slide4 1s ease-in-out forwards;
+}
+
+@keyframes slide4 {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: -200px; /* Adjust based on desired end position */
+        opacity: 1;
+    }
+}
+.highlight-text {
+    color: #d400ff;
+    /* animation: slide4 2s ease-in forwards; */
+    display: inline-block;
+    transition: opacity 2s ease-in-out;
+    
+
+}
+
+
+   
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+
+.description1{
+    font-family:cursive;
+    font-size: 30px;
+    color: blanchedalmond;
+    margin: 20px 0;
+    /* line-height: 16px;
+    size: 11px; */
+    font-weight: 500;
+    position: relative;
+    bottom: 100px;
+    /* white-space: nowrap; */
+    position: relative;
+    right: 10px;
+    animation: slide5 1.5s ease-in-out forwards;
+}
+@keyframes slide5 {
+    from {
+        top: -0px;
+        opacity: 0;
+    }
+    to {
+        top: -150px; /* Adjust based on desired end position */
+        opacity: 1;
+    }
+}
+
+.description2{
+    font-family: cursive;
+    font-size: 30px;
+    color: blanchedalmond;
+    margin: 20px 0;
+    /* line-height: 16px;
+    size: 11px; */
+    font-weight: 500;
+    position: relative;
+    bottom: 100px;
+    animation: slide5 1.5s ease-in-out forwards;
+
+}
+
+/* Email Input Section */
+.email-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    animation: slide7 1.7s ease-in-out forwards;
+}
+
+@keyframes slide7 {
+    from {
+        top: 90px;
+        opacity: 0;
+    }
+    to {
+        top: 0px; /* Adjust based on desired end position */
+        opacity: 1;
+    }
+}
+
+.email-section input[type="email"] {
+    padding: 20px 100px;
+    font-size: 1em;
+    border: 1px solid #d400ff;
+    border-radius: 25px;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    border-radius: 10px;
+    
+    
+    
+}
+
+.system {
+    transition: 0.3s ease;
+  }
+  
+  .system:hover {
+    transition: 0.3s ease;
+    border: 1px solid var(--clr);
+    color: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+    border-color: var(--clr);
+  }
+
+.get-started {
+    padding: 20px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #d400ff;
+    border: 1px solid #d400ff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.get-started:hover {
+    background-color: #b000e6;
+}
+
+
+@media screen  and (max-width: 1804px)
+{
+    .navbar{
+        max-width: 1200px;
+    }
+} 
+
+@media screen  and (max-width: 1544px)
+{
+    .hero{
+        transform: scale(0.9);   
+    }
+    .body{
+       background-attachment: fixed;
+
+    }
+}
+
+@media screen  and (max-width: 1452px)
+{
+    .navbar{
+        max-width: 1000px;
+    }
+    
+}
+
+@media screen  and (max-width: 1226px)
+{
+    .navbar{
+        max-width: 900px;
+    }
+    .logo{
+        transform: scale(0.9);
+    }
+
+}
+@media screen  and (max-width: 1100px)
+{
+    .navbar{
+        transform: scale(1.1);
+    }
+    .nav-links a,.login-btn{
+        margin: 0 5px;
+    }
+    .hero{
+        transform: scale(0.8);   
+    }
+
+}
+@media screen  and (max-width: 1100px)
+{
+    .navbar{
+        transform: scale(1);
+    }
+    .nav-links a,.login-btn{
+        margin: 0 5px;
+    }
+
+}
+
+@media screen  and (max-width: 876px)
+{
+    .navbar{
+        max-width: 700px;
+    }
+    .nav-links a,.login-btn{
+        margin: 0 2px;
+    }
+    .hero{
+        transform: scale(0.7);   
+    }
+
+
+}
+
+@media screen  and (max-width: 680px)
+{
+    
+    .navbar{
+        max-width: 700px;
+    }
+    .hero{
+        transform: scale(0.6);   
+    }
+
+    .nav-links a,.login-btn{
+        margin: 0 1px;
+    }
+    
+
+}
+
+@media screen  and (max-width: 442px)
+{
+    .navbar{
+        max-width: 700px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .nav-links{
+        margin: 0 2px;
+        transform: scale(0.8);
+
+    }
+    .login-btn{
+        margin: 0.2px;
+        transform: scale(1);
+    }
+}
+
+@media screen  and (max-width: 410px)
+{
+
+   
+        .body {
+           
+        }
+    }
+      
+    
+
+
+
+
+    
+
+

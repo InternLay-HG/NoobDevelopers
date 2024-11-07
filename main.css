@@ -79,13 +79,15 @@ body {
 .login-btn {
     color: blanchedalmond;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 11px;
     font-size: 1em;
     font-weight: bold;
     border: 1px solid #d400ff;
     border-radius: 15px;
-    padding: 8px 15px;
+    padding: 8px 14px;
     transition: all 0.3s;
+    position: relative;
+    right: -50px;
 }
 
 .nav-links a:hover,

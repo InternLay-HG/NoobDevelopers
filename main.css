@@ -621,6 +621,9 @@ body {
         top: 300px;
         transform: scale(0.7);
     }
+    .email-section{
+        right: 190px;
+    }
 }
 
 
@@ -641,6 +644,9 @@ body {
         top: 300px;
         transform: scale(0.6);
     }
+    .email-section{
+        right: 190px;
+    }
     
 
 }
@@ -659,6 +665,9 @@ body {
     .container h1{
         position: absolute;
         left: 40px;
+    }
+    .email-section{
+        right: 190px;
     }
 }
 

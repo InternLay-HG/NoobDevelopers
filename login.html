@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginPage</title>
+    <link rel="stylesheet" href="login.css">
+    <script>
+        function handleLogin(event) {
+            event.preventDefault(); // Prevent the form from submitting
+            alert("Login successful! Redirecting to home page...");
+            // Redirect to home page after 1 second
+            setTimeout(() => {
+                window.location.href = "main.html";
+            }, 1000);
+        }
+    </script>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="navbar">
+     <div class="logo">
+         <div class="log">SKI<span class="logo-highlight">L</span>
+             <div class="log2"><span class="logo-highlight">L</span>INK
+             </div>   
+         </div>
+     </div>
+    
+     <div class="nav-links">
+         <a href="main.html">Home</a>
+         <a href="#">About Us</a>
+         <button class="login-btn">Login</button>
+     </div>
+     
+    </div>
+    
+    <div class="line">
+     
+    </div>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form onsubmit="handleLogin(event)">
+                <label for="email">E-Mail Address</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                
+                <a href="#" class="forgot-password">Forgot Password?</a>
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

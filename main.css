@@ -34,6 +34,16 @@ body {
     min-height: 100vh;
 }
 
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
 
 
 /* Navbar styling */
@@ -186,13 +196,7 @@ body {
 
    
 
-.fade-out {
-    opacity: 0;
-}
 
-.fade-in {
-    opacity: 1;
-}
 
 
 .description1{
@@ -322,7 +326,7 @@ body {
     text-align: center;
     min-height: 100vh;
     position: absolute; 
-    bottom: -1600px;
+    bottom: -1850px;
    
    
 }
@@ -446,24 +450,36 @@ body {
     height: auto;
 }
 
-.step1 p {
+.step1 button {
     font-size: 1.1rem;
     font-family: sans-serif;
     font-style: bold;
-    font-weight: 600
+    font-weight: 600;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
 }
-.step2 p {
+
+.step2 button {
     font-size: 1.1rem;
     font-family: sans-serif;
     font-style: bold;
-    font-weight: 600
+    font-weight: 600;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
 }
-.step3 p {
+.step3 button {
     font-size: 1.1rem;
     font-family: sans-serif;
     font-style: bold;
-    font-weight: 600
+    font-weight: 600;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
 }
+
+
 
 /* Styling for dashed lines between steps */
 .step:not(:last-child)::after {
@@ -643,15 +659,6 @@ body {
     }
 }
 
-/* @media screen  and (max-width: 410px)
-{
-
-   
-        .body {
-           
-        }
-    } */
-      
     
 
 

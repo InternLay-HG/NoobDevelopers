@@ -93,3 +93,4 @@ Testing: Pytest for Python modules, JEST for JavaScript components.
 
 5.5 Deployment Environment
 Cloud platform with scalable compute resources (e.g. Google Cloud, GitHub).
+[SKILLINK->](https://ornate-sorbet-ad5851.netlify.app/)

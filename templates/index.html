@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Role Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            color: #333;
+        }
+        #uploadForm {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        #uploadForm input[type="file"] {
+            margin-bottom: 20px;
+        }
+        #uploadForm button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Job Role Prediction</h1>
+    <div id="uploadForm">
+        <form id="resumeForm" enctype="multipart/form-data">
+            <label for="resume">Upload Resume:</label><br><br>
+            <input type="file" id="resume" name="resume" accept=".pdf" required><br><br>
+            <button type="button" onclick="predictJobRole()">Predict Job Role</button>
+        </form>
+    </div>
+    <div id="result"></div>
+
+    <script>
+        function predictJobRole() {
+            const formData = new FormData(document.getElementById('resumeForm'));
+            document.getElementById('result').innerText = "Predicting...";
+
+            fetch('/predict', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('result').innerText = "Predicted Job Role: " + data.job_role;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('result').innerText = "Error predicting job role.";
+            });
+        }
+    </script>
+</body>
+</html>

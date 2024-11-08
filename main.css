@@ -547,6 +547,10 @@ body {
     .logo{
         transform: scale(0.9);
     }
+    .hero{
+        top: 300px;
+        transform: scale(0.8);
+    }
 
 }
 @media screen  and (max-width: 1100px)
@@ -558,7 +562,11 @@ body {
         margin: 0 5px;
     }
     .hero{
-        transform: scale(0.8);   
+         
+        top: 300px;
+        transform: scale(0.6);
+        
+        
     }
 
 }
@@ -570,6 +578,11 @@ body {
     .nav-links a,.login-btn{
         margin: 0 5px;
     }
+    .hero{
+        top: 300px;
+        transform: scale(0.7);
+    }
+    
 
 }
 
@@ -587,6 +600,10 @@ body {
     .steps{
         transform: scale(0.9);
     }
+    .hero{
+        top: 300px;
+        transform: scale(0.6);
+    }
 
 
 }
@@ -597,7 +614,15 @@ body {
         max-width: 600px;
 
     }
+    .hero{
+        bottom: 1200px;
+    }
+    .hero{
+        top: 300px;
+        transform: scale(0.7);
+    }
 }
+
 
 @media screen  and (max-width: 680px)
 {
@@ -611,6 +636,10 @@ body {
 
     .nav-links a,.login-btn{
         margin: 0 1px;
+    }
+    .hero{
+        top: 300px;
+        transform: scale(0.6);
     }
     
 
@@ -637,6 +666,10 @@ body {
     .navbar{
         transform: scale(0.9);
     }
+    .hero{
+        top: 300px;
+        transform: scale(0.6);
+    }
 }
 @media screen  and (max-width: 442px)
 {
@@ -656,6 +689,17 @@ body {
     }
     .container h1{
         transform: scale(1.4);
+    }
+    .hero{
+        top: 200px;
+        transform: scale(0.5);
+    }
+}
+@media screen  and (max-width: 400px)
+{
+    .hero{
+        top: 200px;
+        transform: scale(0.5);
     }
 }
 

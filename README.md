@@ -1,4 +1,4 @@
-Software Requirements Specification (SRS) for Skillink
+Software Requirements Specification (SRS) for Skillink link("https://brilliant-froyo-62dd35.netlify.app/")
 1. Introduction
 1.1 Purpose
 The purpose of the Skill Sync project is to create a platform that enables users to synchronize and enhance their skills. The platform should provide a streamlined, user-friendly interface for skill tracking and recommendation.

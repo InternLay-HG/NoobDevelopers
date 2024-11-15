@@ -1,4 +1,4 @@
-Software Requirements Specification (SRS) for Skillink [SkiLLink](https://brilliant-froyo-62dd35.netlify.app/)
+Software Requirements Specification (SRS) for Skillink [SkiLLink](https://nsdk1.onrender.com)
 
 1. Introduction
 1.1 Purpose
